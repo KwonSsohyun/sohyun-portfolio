@@ -39,10 +39,11 @@ html, body {
 }
 
 /* 로고 */
-.logo {
+.logo a {
     color: #A4FF01;
     font-size: clamp(16px, 2.2vw, 22px);
     font-weight: 700;
+    text-decoration: none;
 }
 
 /* 네비게이션 */
