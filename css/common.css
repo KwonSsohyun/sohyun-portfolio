@@ -1,0 +1,87 @@
+/* common.css */
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 30px);
+}
+
+/* 헤더 전체 */
+.header {
+    background: #000;
+    width: 100%;
+    padding: 0 clamp(16px, 4vw, 30px);
+}
+
+.hero .container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* 1250px 안에서 한 줄 정렬 */
+.header-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: clamp(12px, 2vw, 20px) 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 로고 */
+.logo {
+    color: #A4FF01;
+    font-size: clamp(16px, 2.2vw, 22px);
+    font-weight: 700;
+}
+
+/* 네비게이션 */
+.nav {
+    display: flex;
+    gap: clamp(8px, 2.5vw, 40px);
+}
+
+/* 링크 기본/상태 전부 흰색 + 밑줄 제거 */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(14px, 1.8vw, 18px);
+}
+
+/* hover / visited / active 전부 동일 */
+.nav a:hover,
+.nav a:visited,
+.nav a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'MADE Mirage';
+    src: url('../fonts/made_mirage/MADEMirage-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'MADE Mirage';
+    src: url('../fonts/made_mirage/MADEMirage-Bold.woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'MADE Mirage';
+    src: url('../fonts/made_mirage/MADEMirage-Black.woff2');
+    font-weight: 900;
+}
+
+body {
+    font-family: 'MADE Mirage', serif;
+}

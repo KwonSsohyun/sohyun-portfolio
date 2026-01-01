@@ -1,0 +1,225 @@
+/* main.css */
+
+/* HERO 영역 */
+.hero {
+  background: #000;
+  width: 100%;
+  padding: clamp(60px, 12vw, 120px) 0;
+}
+
+/* 타이틀 공통 */
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(60px, 8vw, 96px);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Creative */
+.accent {
+  color: #BAFF41;
+}
+
+/* 설명 문구 */
+.hero-desc {
+  margin-top: 40px;
+  max-width: 420px;
+
+  color: #E3EBED;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.developer {
+  color: aliceblue;
+}
+
+
+
+/* ABOUT 영역 */
+#about {
+  background: white;
+  width: 100%;
+  padding: clamp(60px, 12vw, 120px) 0;  
+}
+
+.about h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: clamp(36px, 7vw, 96px);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.rolling-wrap {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.rolling-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rolling-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+  animation: roll 40s linear infinite;
+}
+
+@keyframes roll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.rolling-list li {
+  padding: 16px 32px;
+  border-radius: 999px;
+  font-size: clamp(16px, 2.5vw, 22px);
+  white-space: nowrap;
+}
+
+.rolling-list li:nth-child(odd) {
+  background: #292929;
+  color: #fff;
+}
+
+.rolling-list li:nth-child(even) {
+  background: #BAFF41;
+  color: #000;
+}
+
+.work-list li:first-child {
+  border-top: none;
+}
+
+
+
+/* WORK 영역 */
+#work {
+  background: #BAFF41;
+  width: 100%;
+  padding-top: clamp(60px, 12vw, 120px);
+  padding-bottom: clamp(40px, 10vw, 80px);
+}
+
+.work h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-list li {
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+/* 첫 줄 위 선 제거 */
+.work-list li:first-child {
+  border-top: none;
+}
+
+/* 마지막 줄 아래 선 */
+.work-list li:last-child {
+  border-bottom: none;
+}
+
+.work-list a {
+  display: block;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  padding: clamp(20px, 5vw, 48px) clamp(16px, 4vw, 30px);
+  line-height: 1.1;
+  font-size: clamp(32px, 6vw, 64px);
+  font-weight: 700;
+
+  color: #000;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 👉 hover 시 글자만 흰색 */
+.work-list a:hover {
+  color: #000000;
+}
+
+.work-list a:hover span {
+  transform: translateX(10px);
+  transition: transform 0.3s ease;
+}
+
+
+
+/* CONTACT 영역 */
+#contact {
+  background: #0e0e0e;
+  color: #fff;
+  padding: clamp(70px, 10vw, 140px) 0;
+}
+
+.contact h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* 한 줄 구조 */
+.contact-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: baseline;    
+  margin-bottom: 12px;     
+}
+
+/* (P) / (E) 라벨 */
+.contact-row::before {
+  font-size: clamp(48px, 6vw, 64px);
+  font-weight: 700;
+  color: #3f3f3f;
+  line-height: 1;         
+}
+
+/* 라벨 내용 */
+.contact-row.phone::before { content: "(P)"; }
+.contact-row.email::before { content: "(E)"; }
+
+/* 실제 텍스트 */
+.contact-row p {
+  font-size: clamp(36px, 6vw, 48px); 
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.1;                  
+  letter-spacing: -0.03em;
+}
+
+/* 모바일 */
+@media (max-width: 480px) {
+  .contact-row {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .contact-row::before {
+    font-size: 40px;
+  }
+
+  .contact-row p {
+    font-size: 26px;
+  }
+}

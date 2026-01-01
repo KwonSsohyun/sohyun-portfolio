@@ -2,11 +2,107 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>Sohyun Portfolio</title>
+  <title>Kwonsobyun Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <h1>Planning · Design · Publishing Portfolio</h1>
-  <p>Sohyun</p>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <h1 class="logo">Kwonsohyun</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <h2 class="hero-title">
+      <span class="accent">Creative</span>
+      <span class="designer">Designer &</span>
+      <span class="developer">Developer</span>
+    </h2>
+
+    <p class="hero-desc">
+      speciallzed in web design,<br/>
+      UX/UI, Webflow, and Front<br/>
+      End Development.
+    </p>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <!-- 텍스트 영역 (제한폭) -->
+  <div class="container">
+    <h3>About</h3>
+    <h2>
+      Everything<br>
+      you need to grow<br>
+      design skill
+    </h2>
+  </div>
+
+  <!-- 롤링 영역 (전체폭) -->
+  <div class="rolling-wrap">
+    <div class="rolling-track">
+      <ul class="rolling-list">
+        <li>Branding</li>
+        <li>Graphic Design</li>
+        <li>UI/UX Design</li>
+        <li>Product Design</li>
+        <li>Publishing</li>
+        <li>Front-end Dev</li>
+
+        <!-- 🔁 동일 세트 복제 -->
+        <li>Branding</li>
+        <li>Graphic Design</li>
+        <li>UI/UX Design</li>
+        <li>Product Design</li>
+        <li>Publishing</li>
+        <li>Front-end Dev</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="work">
+  <div class="container">
+    <h3>Work</h3>
+  </div>
+
+    <ul class="work-list">
+      <li><a href="work-brand.html">Brand <span>→</span></a></li>
+      <li><a href="work-design.html">Design <span>→</span></a></li>
+      <li><a href="work-development.html">Development <span>→</span></a></li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h3>Contact</h3>
+
+    <div class="contact-row phone">
+      <p>+82 10 7163 2261</p>
+    </div>
+
+    <div class="contact-row email">
+      <p>creative103@naver.com</p>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
 </body>
 </html>
