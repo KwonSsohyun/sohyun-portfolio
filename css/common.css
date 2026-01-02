@@ -125,19 +125,44 @@ html, body {
 
 @font-face {
     font-family: 'MADE Mirage';
-    src: url('../fonts/made_mirage/MADEMirage-Regular.woff2');
+    src: url('../fonts/made_mirage/MADE-Mirage-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Mirage';
+    src: url('../fonts/made_mirage/MADE-Mirage-Regular.otf') format('opentype');
     font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
     font-family: 'MADE Mirage';
-    src: url('../fonts/made_mirage/MADEMirage-Bold.woff2');
+    src: url('../fonts/made_mirage/MADE-Mirage-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Mirage';
+    src: url('../fonts/made_mirage/MADE-Mirage-Bold.otf') format('opentype');
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
     font-family: 'MADE Mirage';
-    src: url('../fonts/made_mirage/MADEMirage-Black.woff2');
+    src: url('../fonts/made_mirage/MADE-Mirage-Black.otf') format('opentype');
     font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
+
 
 body {
     font-family: 'MADE Mirage', serif;
