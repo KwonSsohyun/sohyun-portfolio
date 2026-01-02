@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kwonsohyun Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/sohyun-portfolio/css/common.css">
+
+    <style>
+        .project-header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 30px;
+        }
+
+        /* 제목 */
+        .project-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        }
+
+        /* 핵심 레이아웃 */
+        .project-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* ← 시작선 통일 핵심 */
+        gap: 80px;
+        }
+
+        /* 설명 */
+        .project-desc {
+        max-width: 720px;
+        font-size: 15px;
+        line-height: 1.8;
+        color: #666;
+        }
+
+        /* 메타 */
+        .project-meta {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 220px;
+        }
+
+        .project-meta li {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        }
+
+        .project-meta li span:first-child {
+        font-weight: 700;
+        min-width: 80px;
+        }
+
+        .project-meta li span:last-child {
+        color: #666;
+        }
+
+        /* =====================
+        Mobile
+        ===================== */
+        @media (max-width: 768px) {
+        .project-header {
+            padding: 40px 20px;
+        }
+
+        .project-title {
+            font-size: 22px;
+            margin-bottom: 24px;
+        }
+
+        .project-body {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+    <div class="header-inner">
+        <h1 class="logo"><a href="/">Kwonsohyun</a></h1>
+        <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    </header>    
+
+
+
+    <section class="project-header">
+    <h1 class="project-title">리앤컴퍼니</h1>
+
+    <div class="project-body">
+        <p class="project-desc">
+        제19대 대통령선거 중앙선거관리위원회 프로젝트에 참여하여,<br />
+        선거 홍보를 위한 공간·그래픽·디지털 디자인 작업을 진행했습니다.<br />
+        청사 랩핑 및 사전투표소(서울역) 디자인, 선거 홍보용 웹사이트 운영 디자인, 그래픽 패킹 등<br />
+        공공 프로젝트 전반의 시각 디자인 업무를 수행했습니다.
+        </p>
+
+        <ul class="project-meta">
+        <li><span>Client</span><span>중앙선거관리위원회</span></li>
+        <li><span>Services</span><span>Brand</span></li>
+        <li><span>Date</span><span>2017</span></li>
+        </ul>
+    </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <h3>Contact</h3>
+
+        <div class="contact-row phone">
+        <p>+82 10 7163 2261</p>
+        </div>
+
+        <div class="contact-row email">
+        <p>creative103@naver.com</p>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>

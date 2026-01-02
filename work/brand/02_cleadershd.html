@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kwonsohyun Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/sohyun-portfolio/css/common.css">
+
+    <style>
+        .project-header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 30px;
+        }
+
+        /* 제목 */
+        .project-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        }
+
+        /* 핵심 레이아웃 */
+        .project-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* ← 시작선 통일 핵심 */
+        gap: 80px;
+        }
+
+        /* 설명 */
+        .project-desc {
+        max-width: 720px;
+        font-size: 15px;
+        line-height: 1.8;
+        color: #666;
+        }
+
+        /* 메타 */
+        .project-meta {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 220px;
+        }
+
+        .project-meta li {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        }
+
+        .project-meta li span:first-child {
+        font-weight: 700;
+        min-width: 80px;
+        }
+
+        .project-meta li span:last-child {
+        color: #666;
+        }
+
+        /* =====================
+        Mobile
+        ===================== */
+        @media (max-width: 768px) {
+        .project-header {
+            padding: 40px 20px;
+        }
+
+        .project-title {
+            font-size: 22px;
+            margin-bottom: 24px;
+        }
+
+        .project-body {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+    <div class="header-inner">
+        <h1 class="logo"><a href="/">Kwonsohyun</a></h1>
+        <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    </header>    
+
+
+
+    <section class="project-header">
+    <h1 class="project-title">클리더스홀딩스</h1>
+
+    <div class="project-body">
+        <p class="project-desc">
+            리더스피부과 전 12개 지점의 편집디자인을 담당하며,<br /> 
+            지점 운영에 필요한 인쇄물 디자인을 지속적으로 진행했습니다.<br />
+            신규 지점 오픈 시 간판·사인물 디자인과 시술 상담 안내서 제작을 통해<br /> 
+            오프라인 브랜드 디자인의 일관성을 구축했습니다.
+        </p>
+
+        <ul class="project-meta">
+        <li><span>Client</span><span>리더스피부과</span></li>
+        <li><span>Services</span><span>Brand, BX</span></li>
+        <li><span>Date</span><span>2017-2019</span></li>
+        </ul>
+    </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <h3>Contact</h3>
+
+        <div class="contact-row phone">
+        <p>+82 10 7163 2261</p>
+        </div>
+
+        <div class="contact-row email">
+        <p>creative103@naver.com</p>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>

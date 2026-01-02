@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kwonsohyun Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/sohyun-portfolio/css/common.css">
+
+    <style>
+        .project-header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 30px;
+        }
+
+        /* 제목 */
+        .project-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        }
+
+        /* 핵심 레이아웃 */
+        .project-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* ← 시작선 통일 핵심 */
+        gap: 80px;
+        }
+
+        /* 설명 */
+        .project-desc {
+        max-width: 720px;
+        font-size: 15px;
+        line-height: 1.8;
+        color: #666;
+        }
+
+        /* 메타 */
+        .project-meta {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 220px;
+        }
+
+        .project-meta li {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        }
+
+        .project-meta li span:first-child {
+        font-weight: 700;
+        min-width: 80px;
+        }
+
+        .project-meta li span:last-child {
+        color: #666;
+        }
+
+        /* =====================
+        Mobile
+        ===================== */
+        @media (max-width: 768px) {
+        .project-header {
+            padding: 40px 20px;
+        }
+
+        .project-title {
+            font-size: 22px;
+            margin-bottom: 24px;
+        }
+
+        .project-body {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+    <div class="header-inner">
+        <h1 class="logo"><a href="/">Kwonsohyun</a></h1>
+        <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    </header>    
+
+
+
+    <section class="project-header">
+    <h1 class="project-title">한솥</h1>
+
+    <div class="project-body">
+        <p class="project-desc">
+            국내 도시락 브랜드 1위 한솥에서 근무하며,<br /> 
+            웹·모바일 서비스 운영과 개선, 데이터 기반 담당했습니다.<br />
+            홈페이지 수정 및 신규 페이지 개발을 수행했으며,<br /> 
+            이벤트 운영 전후로 판매 데이터를 쿼리하여 실제 매출 효과와 메뉴별 성과를 분석했습니다.<br />
+            또한 전 지점 포스 시스템 관리와 메뉴 운영 업무를 병행했으며,<br /> 
+            키오스크 신규 구축 프로젝트에서는 CJ와 협업하며 디지털 서비스 확장 과정에 참여했습니다.
+        </p>
+
+        <ul class="project-meta">
+        <li><span>Client</span><span>한솥</span></li>
+        <li><span>Services</span><span>UX/UI, Development</span></li>
+        <li><span>Date</span><span>2022</span></li>
+        </ul>
+    </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <h3>Contact</h3>
+
+        <div class="contact-row phone">
+        <p>+82 10 7163 2261</p>
+        </div>
+
+        <div class="contact-row email">
+        <p>creative103@naver.com</p>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>

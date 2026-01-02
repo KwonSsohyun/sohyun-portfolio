@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kwonsohyun Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/sohyun-portfolio/css/common.css">
+
+    <style>
+        .project-header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 30px;
+        }
+
+        /* 제목 */
+        .project-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        }
+
+        /* 핵심 레이아웃 */
+        .project-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* ← 시작선 통일 핵심 */
+        gap: 80px;
+        }
+
+        /* 설명 */
+        .project-desc {
+        max-width: 720px;
+        font-size: 15px;
+        line-height: 1.8;
+        color: #666;
+        }
+
+        /* 메타 */
+        .project-meta {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 220px;
+        }
+
+        .project-meta li {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        }
+
+        .project-meta li span:first-child {
+        font-weight: 700;
+        min-width: 80px;
+        }
+
+        .project-meta li span:last-child {
+        color: #666;
+        }
+
+        /* =====================
+        Mobile
+        ===================== */
+        @media (max-width: 768px) {
+        .project-header {
+            padding: 40px 20px;
+        }
+
+        .project-title {
+            font-size: 22px;
+            margin-bottom: 24px;
+        }
+
+        .project-body {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .project-desc {
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+    <div class="header-inner">
+        <h1 class="logo"><a href="/">Kwonsohyun</a></h1>
+        <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    </header>    
+
+
+
+    <section class="project-header">
+    <h1 class="project-title">리드코프</h1>
+
+    <div class="project-body">
+        <p class="project-desc">
+            대부업계 1위 리드코프에 근무하며, 파이썬 플라스크 기반의<br />  
+            사내 일일 영업현황 대시보드를 개발하며 디지털 실무 전반에 참여했습니다.<br /> 
+            대시보드 구축 이후에는 기존 디자인 경험을 바탕으로<br />  
+            리드코프 웹·앱 디자인을 진행하며 서비스 UI 전반을 담당했습니다.<br /> 
+            나라신용정보, 엠투엔 홈페이지 리뉴얼 프로젝트에서 PM으로 참여하여<br />  
+            WBS 기반 일정 관리와 디자인·개발 프로세스를 총괄했으며,<br />  
+            디자인 컨펌과 개발 경험을 바탕으로 구현이 필요한 영역에는 직접 개발에 투입되어 프로젝트를 완수했습니다.
+        </p>
+
+        <ul class="project-meta">
+        <li><span>Client</span><span>리드코프</span></li>
+        <li><span>Services</span><span>UX/UI, Development</span></li>
+        <li><span>Date</span><span>2023-2025</span></li>
+        </ul>
+    </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <h3>Contact</h3>
+
+        <div class="contact-row phone">
+        <p>+82 10 7163 2261</p>
+        </div>
+
+        <div class="contact-row email">
+        <p>creative103@naver.com</p>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>
