@@ -32,10 +32,10 @@
             <span class="projects-period">2017 - Now</span>
 
             <div class="projects-filter">
-                <a href="#all" data-tab="all" class="tab active">All projects</a>
-                <a href="#brand" data-tab="brand" class="tab">Brand</a>
-                <a href="#design" data-tab="design" class="tab">Design</a>
-                <a href="#development" data-tab="development" class="tab">Development</a>
+                <a href="?category=all" class="tab">All projects</a>
+                <a href="?category=brand" class="tab">Brand</a>
+                <a href="?category=design" class="tab">Design</a>
+                <a href="?category=development" class="tab">Development</a>
             </div>
         </div>
     </div>
@@ -135,28 +135,36 @@
 <!-- <script src="/js/work.js"></script> -->
 <!-- <script src="/sohyun-portfolio/js/work.js"></script> -->
 <script>
+const params = new URLSearchParams(window.location.search);
+const currentCategory = params.get('category') || 'all';
+
 const tabs = document.querySelectorAll('.projects-filter .tab');
 const items = document.querySelectorAll('.projects-list li');
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', e => {
-        e.preventDefault();
+/* 탭 active 처리 */
+    tabs.forEach(tab => {
+    const url = new URL(tab.href);
+    const tabCategory = url.searchParams.get('category') || 'all';
 
-        const target = tab.dataset.tab;
-
-        tabs.forEach(t => t.classList.remove('active'));
+    if (tabCategory === currentCategory) {
         tab.classList.add('active');
-
-        items.forEach(item => {
-        const categories = item.dataset.category;
-
-        if (target === 'all' || categories.includes(target)) {
-            item.style.display = '';
-        } else {
-            item.style.display = 'none';
-        }
-        });
+    } else {
+        tab.classList.remove('active');
+    }
     });
+
+    /* 리스트 필터 */
+    items.forEach(item => {
+    const categories = item.dataset.category;
+
+    if (
+        currentCategory === 'all' ||
+        categories.includes(currentCategory)
+    ) {
+        item.style.display = '';
+    } else {
+        item.style.display = 'none';
+    }
     });
 </script>
 
